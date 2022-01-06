@@ -54,39 +54,39 @@
 
 // dddddddddddddd
 
-// var couter=document.getElementById('couter')
-// var incrementBtn=document.getElementById('increment')
-// var dicrementBtn=document.getElementById('dicrement')
-// var resetBtn=document.getElementById('reset')
+var couter=document.getElementById('couter')
+var incrementBtn=document.getElementById('increment')
+var dicrementBtn=document.getElementById('dicrement')
+var resetBtn=document.getElementById('reset')
 
-// var payloadInput = document.getElementById('payload')
-// var addPayloadBtn = document.getElementById('addPayload')
+var payloadInput = document.getElementById('payload')
+var addPayloadBtn = document.getElementById('addPayload')
 
-// incrementBtn.addEventListener('click' , function(){
-//     coutterSetter(1)
-// })
+incrementBtn.addEventListener('click' , function(){
+    coutterSetter(1)
+})
 
-// dicrementBtn.addEventListener('click' , function(){
-//     coutterSetter(-1)
-// })
+dicrementBtn.addEventListener('click' , function(){
+    coutterSetter(-1)
+})
 
-// addPayloadBtn.addEventListener('click', () => {
-//     coutterSetter(payloadInput.value - 0 )
-// })
-// function coutterSetter(payload = 0){
-//     let couter=document.getElementById('couter')
-//     let couternumber =couter.textContent - 0
-//     couter.textContent=couternumber+payload
-// }
-
-
-
-function fizzBuzz(number= 0){
-    if(number % 15===0) return 'FizzBuzz'
-    if(number % 5===0) return 'Fizz'
-    if(number % 3===0) return 'Buzz'
-    return 'Berilgan qiymat to\'g\'ri kelmaydi'
-
+addPayloadBtn.addEventListener('click', () => {
+    coutterSetter(payloadInput.value - 0 )
+})
+function coutterSetter(payload = 0){
+    let couter=document.getElementById('couter')
+    let couternumber =couter.textContent - 0
+    couter.textContent=couternumber+payload
 }
-var result=fizzBuzz(45)
-console.log(result)
+
+
+
+// function fizzBuzz(number= 0){
+//     if(number % 15===0) return 'FizzBuzz'
+//     if(number % 5===0) return 'Fizz'
+//     if(number % 3===0) return 'Buzz'
+//     return 'Berilgan qiymat to\'g\'ri kelmaydi'
+
+// }
+// var result=fizzBuzz(45)
+// console.log(result)
